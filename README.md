@@ -8,22 +8,18 @@
 ![Chrome](https://img.shields.io/badge/Chrome-Extension-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Manifest](https://img.shields.io/badge/Manifest-V3-red.svg)
-
 ## 🎬 Demo Video
 
 <p align="center">
 
-<a href="https://res.cloudinary.com/djpqvg6mr/video/upload/v1783246796/VN20260524_220404_eemqqn.mp4" target="_blank">
+<a href="https://res.cloudinary.com/djpqvg6mr/video/upload/v1783246796/VN20260524_220404_eemqqn.mp4">
 
-<img src="images/img1.jpg"
-     alt="NaukriSpy Demo"
-     width="900">
+<img src="https://img.shields.io/badge/▶️%20Watch%20Demo%20Video-Click%20Here-red?style=for-the-badge&logo=icloud&logoColor=white"/>
 
 </a>
-<br>
-<b>👆 Click the image above to watch the demo video</b>
 
 </p>
+
 ---
 
 ## 🎯 Overview
