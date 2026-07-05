@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+ "name": "NaukriSpy by @Codingyari",
+  "version": "1.0.0",
+ "description": "NaukriSpy is a powerful Chrome extension that helps you filter, match-score, and apply to Naukri.com jobs faster — reduces manual click-through time by up to 50%.",
+  "permissions": ["scripting", "storage"],
+   "homepage_url": "https://codingyari.com",
+  "author": "Sameer Khan (CodingYari)",
+  "host_permissions": [
+    "https://www.naukri.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.naukri.com/job-listings*"],
+      "js": ["job-listing-page-merged.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+
+    {
+      "matches": ["*://www.naukri.com/*"],
+      "js": ["filter-jobs-page.js", "./utils/recommended-jobs-page-matchscore.js", "./utils/recommended-jobs-page-instant-apply.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+          "exclude_matches": ["*://www.naukri.com/mnjuser/homepage*"]
+    },
+
+  
+    {
+      "matches": ["*://www.naukri.com/mnjuser/recommendedjobs*"],
+      "js": ["./recommended-jobs-page.js", "./utils/recommended-jobs-page-matchscore.js", "./utils/recommended-jobs-page-instant-apply.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "exclude_matches": ["*://www.naukri.com/mnjuser/homepage*"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
+}
