@@ -27,10 +27,6 @@
 
 NaukriSpy transforms your Naukri.com job search experience by adding intelligent automation, enhanced UI elements, and smarter job discovery features directly into the platform.
 
-### 🎬 Intro Video
-
-You can view the extension intro video locally by opening the `images/intro.html` file in your browser (place `intro.mp4` into the `images/` folder if not already present).
-
 ### Why NaukriSpy?
 
 - ⚡ **Save Time**: Find the right jobs faster with improved job cards and filters
@@ -39,6 +35,20 @@ You can view the extension intro video locally by opening the `images/intro.html
 - 🎨 **Better UI**: Clean, modern interface with visual feedback
 
 ---
+## 👨‍💻 Created By
+
+<table>
+<tr>
+<td align="center">
+<a href="https://linkedin.com/in/sameerkhandev">
+<img src="https://media.licdn.com/dms/image/v2/D5635AQHxwQWWE5nDcw/profile-framedphoto-shrink_400_400/B56Z3czkKmJwAc-/0/1777525998538?e=1783846800&v=beta&t=t8FBPUuEfdTrLqY-gIVmtkEl1j5y2DVr8AmBOfNge9E" width="120px;" alt="Sameer Khan"/><br>
+<b>Sameer Khan</b>
+</a>
+<br>
+Full Stack Developer
+</td>
+</tr>
+</table>
 
 ## ✨ Features
 
