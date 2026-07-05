@@ -35,6 +35,26 @@ NaukriSpy transforms your Naukri.com job search experience by adding intelligent
 - 🎨 **Better UI**: Clean, modern interface with visual feedback
 
 ---
+## 📸 Preview
+
+<div align="center">
+
+<img src="images/img1.jpg" alt="Floating Action Button & Panel" width="800"/>
+
+<br><br>
+
+<img src="images/img2.jpg" alt="Enhanced Job Cards" width="800"/>
+
+<br><br>
+<img src="images/img3.jpg" alt="Smart Filtering" width="800"/>
+<br><br>
+<img src="images/img4.jpg" alt="Questionnaire Panel" width="800"/>
+
+
+</div>
+
+---
+
 ## 👨‍💻 Created By
 
 <table>
@@ -49,6 +69,9 @@ Full Stack Developer
 </td>
 </tr>
 </table>
+
+
+
 
 ## ✨ Features
 
