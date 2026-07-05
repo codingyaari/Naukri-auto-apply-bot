@@ -9,18 +9,21 @@
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Manifest](https://img.shields.io/badge/Manifest-V3-red.svg)
 
-### 🎬 Intro Video
+## 🎬 Demo Video
 
-[![Watch the Demo Video](https://img.shields.io/badge/▶️_Watch-Intro_Video-blue?style=for-the-badge)](images/intro.mp4)
+<p align="center">
 
+<a href="https://res.cloudinary.com/djpqvg6mr/video/upload/v1783246796/VN20260524_220404_eemqqn.mp4" target="_blank">
 
+<img src="images/img1.jpg"
+     alt="NaukriSpy Demo"
+     width="900">
 
-**A powerful Chrome extension that supercharges your Naukri.com job search with smart filtering, enhanced job cards, and useful recruitment insights.**
+</a>
+<br>
+<b>👆 Click the image above to watch the demo video</b>
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Configuration](#-configuration) • [Technical Details](#-technical-details)
-
-</div>
-
+</p>
 ---
 
 ## 🎯 Overview
