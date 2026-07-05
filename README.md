@@ -1,6 +1,7 @@
 # 🕵️ NaukriSpy — Smart Naukri.com Job Application Assistant
- 
+
 <div align="center">
+
 <img src="https://github.com/codingyaari/codingyari-assets/blob/main/asssets/nokry-spy.png?raw=true" 
              alt="Auto Apply" style="width:100px; height:100px; object-fit:contain; pointer-events:none; user-select:none; ">
 
@@ -8,17 +9,16 @@
 ![Chrome](https://img.shields.io/badge/Chrome-Extension-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Manifest](https://img.shields.io/badge/Manifest-V3-red.svg)
-## 🎬 Demo Video
+
+### 🎬 Demo Video
 
 <p align="center">
-
 <a href="https://res.cloudinary.com/djpqvg6mr/video/upload/v1783246796/VN20260524_220404_eemqqn.mp4">
-
 <img src="https://img.shields.io/badge/▶️%20Watch%20Demo%20Video-Click%20Here-red?style=for-the-badge&logo=icloud&logoColor=white"/>
-
 </a>
-
 </p>
+
+</div>
 
 ---
 
@@ -34,6 +34,7 @@ NaukriSpy transforms your Naukri.com job search experience by adding intelligent
 - 🎨 **Better UI**: Clean, modern interface with visual feedback
 
 ---
+
 ## 📸 Preview
 
 <div align="center">
@@ -45,10 +46,12 @@ NaukriSpy transforms your Naukri.com job search experience by adding intelligent
 <img src="images/img2.jpg" alt="Enhanced Job Cards" width="800"/>
 
 <br><br>
-<img src="images/img3.jpg" alt="Smart Filtering" width="800"/>
-<br><br>
-<img src="images/img4.jpg" alt="Questionnaire Panel" width="800"/>
 
+<img src="images/img3.jpg" alt="Smart Filtering" width="800"/>
+
+<br><br>
+
+<img src="images/img4.jpg" alt="Questionnaire Panel" width="800"/>
 
 </div>
 
@@ -69,8 +72,7 @@ Full Stack Developer
 </tr>
 </table>
 
-
-
+---
 
 ## ✨ Features
 
@@ -79,12 +81,6 @@ Full Stack Developer
 - **Intelligent Matching**: Fuzzy search with confidence scoring
 - **Custom Rules**: Skip company-apply jobs or specific companies
 - **Toggle Control**: Enable/disable filtering on the fly
-
-### 📊 Enhanced Job Cards
-- **Extra Metrics**: Posted date, best apply time, applicant count
-- **Direct Apply Links**: Highlighted external application URLs
-- **Status Indicators**: Visual badges for easy job review
-- **Company Insights**: Better visibility into each job card
 
 ### 📊 Enhanced Job Cards
 - **Extra Metrics**: Posted date, best apply time, applicant count
@@ -102,7 +98,7 @@ Full Stack Developer
 
 ## 📁 Project Structure
 
-
+```
 naukri-extension/
 ├── manifest.json                    # Extension manifest (Manifest V3)
 ├── content.js                       # Main content script orchestrator
@@ -120,7 +116,7 @@ naukri-extension/
 │   └── logo.png                    # NaukriSpy logo
 ├── README.md                       # You are here!
 └── LICENSE                         # MIT License
-
+```
 
 ---
 
@@ -135,8 +131,8 @@ naukri-extension/
 
 1. **Download the Extension**
 ```bash
-   git clone https://github.com/yourusername/naukri-spy.git
-   cd naukri-spy
+git clone https://github.com/yourusername/naukri-spy.git
+cd naukri-spy
 ```
 
 2. **Open Chrome Extensions**
@@ -168,7 +164,7 @@ naukri-extension/
    - Fill in your skills, experience, CTC, notice period, etc.
    - Save changes
 
-4. **Configure Filters** (Optional)
+3. **Configure Filters** (Optional)
    - Enable **Smart Filtering** toggle
    - Add keywords like: `react developer`, `node.js`, `full stack`
    - Set minimum confidence threshold (default: 50%)
@@ -196,6 +192,8 @@ localStorage.setItem("naukri_filter_keywords", JSON.stringify(filterKeywords));
 ## 🛠️ Technical Details
 
 ### Architecture
+
+```
 ┌─────────────────────────────────────────────────────────┐
 │                    Naukri.com Page                      │
 ├─────────────────────────────────────────────────────────┤
@@ -213,6 +211,7 @@ localStorage.setItem("naukri_filter_keywords", JSON.stringify(filterKeywords));
 │  │  • Enhances the Naukri.com job browsing experience │  │
 │  └───────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────┘
+```
 
 ### API Endpoints Intercepted
 
@@ -288,7 +287,7 @@ const API_KEY = localStorage.getItem("gemini_api_key");
 3. Clear cache and reload extension
 4. Check Console for errors (F12 → Console)
 
-### Troubleshooting
+### API / Bearer Token Issues
 
 1. Verify Bearer token is correct and not expired
 2. Check if you're on the correct page (Job Agent page)
@@ -332,7 +331,6 @@ const API_KEY = localStorage.getItem("gemini_api_key");
 
 ---
 
-
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
@@ -364,9 +362,16 @@ We welcome contributions! Here's how you can help:
 
 - 🌐 Website: [codingyari.com](https://codingyari.com)
 - 💼 LinkedIn: [linkedin.com/in/sameerkhandev](https://linkedin.com/in/sameerkhandev)
-- 📄 Privacy Policy: [codingyari.com/privacy-policy](https://codingyari.com/privacy-policy)
+- 📄 Privacy Policy: [codingyari.com/privacy-policy](https://codingyari.com/privacy-policy/naukri-spy)
 
 ---
+
 ## 🔒 Privacy Policy (Summary)
 
 NaukriSpy runs entirely in your browser and does not send your job search data, resume, or profile information to any external server owned by CodingYari. All settings, match-score logic, and profile data stay in your browser's local storage. For the full policy, see [codingyari.com/privacy-policy](https://codingyari.com/privacy-policy/naukri-spy).
+
+---
+
+## 📜 License
+
+MIT License — see [LICENSE](LICENSE) for details.
