@@ -23,7 +23,7 @@ const interceptorCode = `(function() {
     return resp;
   };
 
-  // XHR — sirf JD URL ke liye
+
   const _origOpen = XMLHttpRequest.prototype.open;
   const _origSend = XMLHttpRequest.prototype.send;
 
@@ -98,20 +98,20 @@ function insertData(data) {
   newRow.innerHTML = `
    <div style="height: 3px;"></div> <!-- Line ke beech ki spacing -->
  <span class="styles_jhc__stat__PgY67" style="display: inline-flex; align-items: center; gap: 4px; margin-right: 5px;">
-    <!-- Users/Applicants Icon -->
+   
     <svg style="width: 15px; height: 15px; color: #3b82f6;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
     <label style="color: #2563eb; font-weight: 600; margin: 0;">Applicants: </label>
     <span style="color: #1d4ed8; font-weight: 700;">${jd.applyCount || 0}</span>
   </span>
 
   <span class="styles_jhc__stat__PgY67" style="display: inline-flex; align-items: center; gap: 4px; margin-right: 5px;">
-    <!-- Eye/Views Icon -->
+
     <svg style="width: 15px; height: 15px; color: #f97316;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
     <label style="color: #ea580c; font-weight: 600; margin: 0;">Page Views: </label>
     <span style="color: #c2410c; font-weight: 700;">${jd.viewCount || 0}</span>
   </span>
   <span class="styles_jhc__stat__PgY67" style="display: inline-flex; align-items: center; gap: 4px; margin-right: 15px;">
-    <!-- Tag Icon (Job Type) -->
+
     <svg style="width: 15px; height: 15px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20.59 13.41-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
     <label style="color: #64748b; font-weight: 500; margin: 0;">JobType: </label>
     <span style="color: #1e293b; font-weight: 600;">${jd.jobType}</span>
@@ -119,14 +119,14 @@ function insertData(data) {
     <br/><div style="height: 6px;"></div> <!-- Line ke beech ki spacing -->
 
   <span class="styles_jhc__stat__PgY67" style="display: inline-flex; align-items: center; gap: 4px; margin-right: 1px;">
-    <!-- Clock Icon (Posted On) -->
+   
     <svg style="width: 15px; height: 15px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
     <label style="color: #64748b; font-weight: 500; margin: 0;">Posted: </label>
     <span style="color: #1e293b; font-weight: 600;">${posted}</span>
   </span>
   
   <span class="styles_jhc__stat__PgY67" style="display: inline-flex; align-items: center; gap: 4px; margin-right: 1px;">
-    <!-- Document Check Icon (You Applied) -->
+
     <svg style="width: 15px; height: 15px; color: #10b981;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m9 15 2 2 4-4"></path></svg>
     <label style="color: #64748b; font-weight: 500; margin: 0;">You Applied: </label>
     <span style="color: #1e293b; font-weight: 600;">${applied}</span>
@@ -141,7 +141,7 @@ function insertData(data) {
 
   statsContainer.appendChild(newRow);
 
-  // console.log("✅ Data inserted in DOM");
+ 
 }
 
 // ========== Fallback in case of no data ==========
@@ -165,7 +165,7 @@ function startObserver() {
     return setTimeout(startObserver, 500);
   }
 
-  // console.log("👀 Observer started");
+
 
   const observer = new MutationObserver(() => {
     const statsContainer = document.querySelector(
@@ -173,10 +173,7 @@ function startObserver() {
     );
 
     if (statsContainer && !document.getElementById("custom-insights")) {
-      // console.log("🔁 Re-injecting data...");
 
-      // IMPORTANT: yaha fake event mat bhejo bina data ke
-      // instead stored data use karo (neeche fix diya hai)
       if (window.__lastJobData) {
         insertData(window.__lastJobData);
       }

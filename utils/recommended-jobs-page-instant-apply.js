@@ -69,7 +69,7 @@ function insertInstantApplyButtons() {
     });
 
     matchButton.insertAdjacentElement("afterend", applyBtn);
-    // nudge the svg icon up inside the button so it doesn't push layout down
+  
     try {
       const _svg = applyBtn.querySelector('svg');
       if (_svg) { _svg.style.marginTop = '0px'; _svg.style.display = 'block'; }

@@ -21,12 +21,12 @@ const interceptorCode = `(function() {
     return resp;
   };
 
-  // ✅ XHR — existing open/send ko wrap karo, replace mat karo
+
   const _origOpen2 = XMLHttpRequest.prototype.open;
   const _origSend2 = XMLHttpRequest.prototype.send;
 
   XMLHttpRequest.prototype.open = function(method, url) {
-    this._simURL = url;           // ✅ alag property name _simURL
+    this._simURL = url;          
     return _origOpen2.apply(this, arguments);
   };
 
@@ -85,7 +85,7 @@ function insertData(data) {
   const contentData = jobs?.content|| [];
 
   contentDataToHtml(contentData);
-  // agar array nahi hai to skip
+  
 
 }
 
@@ -190,8 +190,8 @@ if (companyApply && applyUrl) {
     <line x1="16" y1="2" x2="16" y2="6"></line>
     <line x1="8" y1="2" x2="8" y2="6"></line>
     <line x1="3" y1="10" x2="21" y2="10"></line>
-    <line x1="12" y1="14" x2="12" y2="17"></line> <!-- Exclamation mark body -->
-    <line x1="12" y1="10" x2="12" y2="10"></line> <!-- Exclamation mark dot -->
+    <line x1="12" y1="14" x2="12" y2="17"></line> 
+    <line x1="12" y1="10" x2="12" y2="10"></line> 
   </svg>
       <b>Best Time For Apply:</b> <span style="color:#dc2626;">${applyByTime}</span>
     </span>
@@ -238,8 +238,7 @@ function startObserver() {
     if (statsContainer && !document.getElementById("custom-insights")) {
 
 
-      // IMPORTANT: yaha fake event mat bhejo bina data ke
-      // instead stored data use karo (neeche fix diya hai)
+  
       if (window.__lastSimJobData) {
         insertData(window.__lastSimJobData);
       }

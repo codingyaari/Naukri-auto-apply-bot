@@ -86,7 +86,7 @@ if (window.location.pathname.includes("-jobs")) {
                    article.querySelector("div:last-child");
 
       if (!footer) {
-        footer = article; // fallback - direct append to card
+        footer = article; 
       }
 
       const insertId = `custom-${cardId}`;
@@ -195,7 +195,7 @@ if (window.location.pathname.includes("-jobs")) {
         footer.appendChild(newRow);
       }
 
-      // link shared helpers for this card
+
       try {
         if (typeof insertInstantApplyButtons === 'function') {
           insertInstantApplyButtons();
@@ -226,7 +226,7 @@ if (window.location.pathname.includes("-jobs")) {
     window.__lastJobData = data;
     setTimeout(() => {
       insertData(data);
-    }, 800);      // Direct call on new data
+    }, 800);     
   });
 
   // ========== OBSERVER (Debounced) ==========
@@ -238,7 +238,7 @@ if (window.location.pathname.includes("-jobs")) {
         if (window.__lastJobData) {
           insertData(window.__lastJobData);
         }
-      }, 800); // Debounce - 800ms wait
+      }, 800);
     });
 
     observer.observe(document.body, { 

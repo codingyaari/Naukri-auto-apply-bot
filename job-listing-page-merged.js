@@ -281,7 +281,7 @@ if (window.location.href.includes("naukri.com/job-listings")) {
         ${companyApplyHtml}
       `;
 
-            // ✅ New line mein insert — postedBlock ke parent ke BAAD
+           
             postedBlock.parentElement.insertAdjacentElement("afterend", newRow);
 
             newRow

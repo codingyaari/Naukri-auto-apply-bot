@@ -8,7 +8,7 @@ if (window.location.href.includes("recommendedjobs")) {
     window.__naukriInterceptor = true;
     function isNaukriJobURL(url) { return url.includes("/jobapi/v2/search/recom-jobs"); }
     
-    // Override fetch
+    
     const _origFetch = window.fetch;
     window.fetch = async function(input, init) {
       const resp = await _origFetch.apply(this, arguments);
@@ -23,7 +23,7 @@ if (window.location.href.includes("recommendedjobs")) {
       return resp;
     };
 
-    // Override XHR
+
     const _origXHR = XMLHttpRequest.prototype;
     const origOpen = _origXHR.open;
     _origXHR.open = function(method, url) {
@@ -43,7 +43,7 @@ if (window.location.href.includes("recommendedjobs")) {
       return origSend.apply(this, arguments);
     };
 
-    // Override Response.json
+
     const origJson = Response.prototype.json;
     Response.prototype.json = async function() {
       const data = await origJson.apply(this, arguments);
@@ -182,7 +182,7 @@ if (window.location.href.includes("recommendedjobs")) {
         article.setAttribute('data-instant-apply', 'true');
       }
       footer.appendChild(newRow);
-      // if instant-apply util is available, trigger it to add buttons immediately
+     
       try {
         if (typeof insertInstantApplyButtons === 'function') {
           insertInstantApplyButtons();
